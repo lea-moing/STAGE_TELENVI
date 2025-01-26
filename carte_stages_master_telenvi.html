@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7a9069a1badb5d1e4eae908cf5b5e686 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7a9069a1badb5d1e4eae908cf5b5e686" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7a9069a1badb5d1e4eae908cf5b5e686 = L.map(
+                "map_7a9069a1badb5d1e4eae908cf5b5e686",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_738c30c30ae249e45fe567380c74fb87 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_738c30c30ae249e45fe567380c74fb87.addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var marker_7697d50a360090a1fffe29ed75086257 = L.marker(
+                [48.6329, -2.0611],
+                {
+}
+            ).addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var icon_bf8496a3e7ae458fb4709feaf25014e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7697d50a360090a1fffe29ed75086257.setIcon(icon_bf8496a3e7ae458fb4709feaf25014e9);
+        
+    
+        var popup_2ea365e1c64312ba22e04eb90be0c804 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4515bcfe8e04efb501edbbe17e894452 = $(`<div id="html_4515bcfe8e04efb501edbbe17e894452" style="width: 100.0%; height: 100.0%;"><b>Centre de Géoécologie Littorale, Dinard</b><br>Évolution du complexe écosystémique de la baie du Mont-Saint-Michel via l'imagerie optique et LiDAR à très haute résolution et la simulation hydro-sédimentaire.</div>`)[0];
+                popup_2ea365e1c64312ba22e04eb90be0c804.setContent(html_4515bcfe8e04efb501edbbe17e894452);
+            
+        
+
+        marker_7697d50a360090a1fffe29ed75086257.bindPopup(popup_2ea365e1c64312ba22e04eb90be0c804)
+        ;
+
+        
+    
+    
+            var marker_93e354c6a434ccc9b04e834cf2a1a402 = L.marker(
+                [45.7339, 4.9119],
+                {
+}
+            ).addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var icon_45268d5bebb758d5d67dc080992b196d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_93e354c6a434ccc9b04e834cf2a1a402.setIcon(icon_45268d5bebb758d5d67dc080992b196d);
+        
+    
+        var popup_9748d213af6a1e7bfa3213f8e41f7f30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c84188f24a3b4fee28dd3663b79d9ee = $(`<div id="html_9c84188f24a3b4fee28dd3663b79d9ee" style="width: 100.0%; height: 100.0%;"><b>UMR 5600 EVS IRG, Bron</b><br>Analyse hydrologique et hydro-climatologique du fonctionnement de la chaîne volcanique des Chyulu Hills au Kenya.</div>`)[0];
+                popup_9748d213af6a1e7bfa3213f8e41f7f30.setContent(html_9c84188f24a3b4fee28dd3663b79d9ee);
+            
+        
+
+        marker_93e354c6a434ccc9b04e834cf2a1a402.bindPopup(popup_9748d213af6a1e7bfa3213f8e41f7f30)
+        ;
+
+        
+    
+    
+            var marker_3192bc8bdf87c3623e92c3d0a401b122 = L.marker(
+                [48.118402, -1.70396],
+                {
+}
+            ).addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var icon_877d7ea36838d361144c0673090ecc9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3192bc8bdf87c3623e92c3d0a401b122.setIcon(icon_877d7ea36838d361144c0673090ecc9c);
+        
+    
+        var popup_b96d6007c7714c7d26126e061709b2c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09887163a364edac1a5f0253e53365db = $(`<div id="html_09887163a364edac1a5f0253e53365db" style="width: 100.0%; height: 100.0%;"><b>LETG Rennes (CNRS), Rennes</b><br>Adaptation des modèles de super-résolution 2D à la 3D : construction d'une base de référence de données 3D actives et passives.</div>`)[0];
+                popup_b96d6007c7714c7d26126e061709b2c5.setContent(html_09887163a364edac1a5f0253e53365db);
+            
+        
+
+        marker_3192bc8bdf87c3623e92c3d0a401b122.bindPopup(popup_b96d6007c7714c7d26126e061709b2c5)
+        ;
+
+        
+    
+    
+            var marker_7cf6005b1e8946594bc8eab0c9ff8a5d = L.marker(
+                [43.645086, 3.867335],
+                {
+}
+            ).addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var icon_59b90598b01941a5d4b3355de708cac9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7cf6005b1e8946594bc8eab0c9ff8a5d.setIcon(icon_59b90598b01941a5d4b3355de708cac9);
+        
+    
+        var popup_1fba27f8d6cfe3163d6a294a9f3eae5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f643ce41cba5283031d83bfe7fb2393b = $(`<div id="html_f643ce41cba5283031d83bfe7fb2393b" style="width: 100.0%; height: 100.0%;"><b>IRD, Montpellier</b><br>Détection et segmentation des couronnes d’arbres par Deep Learning.</div>`)[0];
+                popup_1fba27f8d6cfe3163d6a294a9f3eae5b.setContent(html_f643ce41cba5283031d83bfe7fb2393b);
+            
+        
+
+        marker_7cf6005b1e8946594bc8eab0c9ff8a5d.bindPopup(popup_1fba27f8d6cfe3163d6a294a9f3eae5b)
+        ;
+
+        
+    
+    
+            var marker_4c4584714702661a4a097d6775e5cc1c = L.marker(
+                [48.1146657, -1.7078647],
+                {
+}
+            ).addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var icon_ac4d7f9fcfa2b9f38c80d70f245e9e71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4c4584714702661a4a097d6775e5cc1c.setIcon(icon_ac4d7f9fcfa2b9f38c80d70f245e9e71);
+        
+    
+        var popup_7f3fb1ab88b11bd2c1cbf0b5da4b5304 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7de25892e91a13df2e67323593e780af = $(`<div id="html_7de25892e91a13df2e67323593e780af" style="width: 100.0%; height: 100.0%;"><b>INRAE - UMR DECOD, Rennes</b><br>Suivi des dynamiques spatio-temporelles de l’activité phytoplanctonique dans les eaux côtières des îles Kerguelen.</div>`)[0];
+                popup_7f3fb1ab88b11bd2c1cbf0b5da4b5304.setContent(html_7de25892e91a13df2e67323593e780af);
+            
+        
+
+        marker_4c4584714702661a4a097d6775e5cc1c.bindPopup(popup_7f3fb1ab88b11bd2c1cbf0b5da4b5304)
+        ;
+
+        
+    
+    
+            var marker_72d569f12a21f49373c6df833351d730 = L.marker(
+                [48.112868, -1.706839],
+                {
+}
+            ).addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var icon_087e60c39150defa910057286c18530f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_72d569f12a21f49373c6df833351d730.setIcon(icon_087e60c39150defa910057286c18530f);
+        
+    
+        var popup_9a499968b327ce8de99e4572fbbf6783 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58c45fe12c2a0cfae4a06c390ea231bc = $(`<div id="html_58c45fe12c2a0cfae4a06c390ea231bc" style="width: 100.0%; height: 100.0%;"><b>UMR SAS - INRAE, Rennes</b><br>Étude des effets liés à la présence d’un couvert végétal sur les sols et services écosystémiques dans les vignobles en Espagne.</div>`)[0];
+                popup_9a499968b327ce8de99e4572fbbf6783.setContent(html_58c45fe12c2a0cfae4a06c390ea231bc);
+            
+        
+
+        marker_72d569f12a21f49373c6df833351d730.bindPopup(popup_9a499968b327ce8de99e4572fbbf6783)
+        ;
+
+        
+    
+    
+            var marker_56bda0d74a6fe97b3b118a8e24244335 = L.marker(
+                [43.6494315, 3.8689078],
+                {
+}
+            ).addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var icon_b1b995d99933fdec918cfc698b2a9b57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_56bda0d74a6fe97b3b118a8e24244335.setIcon(icon_b1b995d99933fdec918cfc698b2a9b57);
+        
+    
+        var popup_f8eafbb882f8a98e2068761890d4e555 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cd751b6dd1084822bc5d3f203d0bee7 = $(`<div id="html_5cd751b6dd1084822bc5d3f203d0bee7" style="width: 100.0%; height: 100.0%;"><b>UPR AIDA, CIRAD, Montpellier</b><br>Évaluation spatialisée de la précision des produits globaux d’occupation du sol pour l'Afrique Sub-Saharienne.</div>`)[0];
+                popup_f8eafbb882f8a98e2068761890d4e555.setContent(html_5cd751b6dd1084822bc5d3f203d0bee7);
+            
+        
+
+        marker_56bda0d74a6fe97b3b118a8e24244335.bindPopup(popup_f8eafbb882f8a98e2068761890d4e555)
+        ;
+
+        
+    
+    
+            var marker_5276d772d5c08ea35822ce9d79a27dec = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var icon_c416f39fee5a261676bf77de7e801c8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5276d772d5c08ea35822ce9d79a27dec.setIcon(icon_c416f39fee5a261676bf77de7e801c8f);
+        
+    
+        var popup_2683b7f8bfe08b314beb295039b7ebbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d123d4278317c9833b74c1bfd0318b4e = $(`<div id="html_d123d4278317c9833b74c1bfd0318b4e" style="width: 100.0%; height: 100.0%;"><b>Ministère des armées, Paris</b><br>Utilisation de données hyperspectrales pour les armées.</div>`)[0];
+                popup_2683b7f8bfe08b314beb295039b7ebbc.setContent(html_d123d4278317c9833b74c1bfd0318b4e);
+            
+        
+
+        marker_5276d772d5c08ea35822ce9d79a27dec.bindPopup(popup_2683b7f8bfe08b314beb295039b7ebbc)
+        ;
+
+        
+    
+    
+            var marker_09569353e82625df91749e803c0f11a6 = L.marker(
+                [11.9369164, 79.8359207],
+                {
+}
+            ).addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var icon_7e77f11c95742d76344bb9834f65094f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_09569353e82625df91749e803c0f11a6.setIcon(icon_7e77f11c95742d76344bb9834f65094f);
+        
+    
+        var popup_4dbfd3d71234075dfb288cd7188374cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_047d8b176cc729dedef10e35036a558b = $(`<div id="html_047d8b176cc729dedef10e35036a558b" style="width: 100.0%; height: 100.0%;"><b>UMIFRE 21, UAR CNRS 3330, Institut français de Pondichéry, Pondichéry, Inde</b><br>Cartographie des trajectoires phénologiques des cultures et des forêts sèches entre 2022 et juin 2024. Analyse des trajectoires en fonction des précipitations et de l'équilibre des ressources en eau souterraine.</div>`)[0];
+                popup_4dbfd3d71234075dfb288cd7188374cc.setContent(html_047d8b176cc729dedef10e35036a558b);
+            
+        
+
+        marker_09569353e82625df91749e803c0f11a6.bindPopup(popup_4dbfd3d71234075dfb288cd7188374cc)
+        ;
+
+        
+    
+    
+            var marker_17e8533749db81199a0afa2847fe400f = L.marker(
+                [43.6452586, 3.8766402],
+                {
+}
+            ).addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var icon_142f89f9c109889bd3ab209d4240d05b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_17e8533749db81199a0afa2847fe400f.setIcon(icon_142f89f9c109889bd3ab209d4240d05b);
+        
+    
+        var popup_304dd614a23d41a8af8486aed541d840 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51e29eb974dba998c1e47dfbdb13f718 = $(`<div id="html_51e29eb974dba998c1e47dfbdb13f718" style="width: 100.0%; height: 100.0%;"><b>UMR TETIS, CIRAD, Montpellier</b><br>Analyse d'images satellitaires pour le suivi des labours motorisés dans le nord Bénin.</div>`)[0];
+                popup_304dd614a23d41a8af8486aed541d840.setContent(html_51e29eb974dba998c1e47dfbdb13f718);
+            
+        
+
+        marker_17e8533749db81199a0afa2847fe400f.bindPopup(popup_304dd614a23d41a8af8486aed541d840)
+        ;
+
+        
+    
+    
+            var marker_d3abdf45ba5e1af23bf3dae22f7a533a = L.marker(
+                [-20.8822474, 55.4487788],
+                {
+}
+            ).addTo(map_7a9069a1badb5d1e4eae908cf5b5e686);
+        
+    
+            var icon_cff87730c4b0dafe3800defcd20928d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d3abdf45ba5e1af23bf3dae22f7a533a.setIcon(icon_cff87730c4b0dafe3800defcd20928d7);
+        
+    
+        var popup_758fe507a0644a927a553a7462d43ac3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f8694f8f80f7adf5d0df3e7545c00ff = $(`<div id="html_2f8694f8f80f7adf5d0df3e7545c00ff" style="width: 100.0%; height: 100.0%;"><b>BRGM, Saint-Denis, La Réunion</b><br>Analyse des données EGMS (2015-2022) pour cartographier les zones mobiles, caractériser les dynamiques de déplacements, détecter des précurseurs d'effondrements récents et valider les résultats par des vérifications terrain.</div>`)[0];
+                popup_758fe507a0644a927a553a7462d43ac3.setContent(html_2f8694f8f80f7adf5d0df3e7545c00ff);
+            
+        
+
+        marker_d3abdf45ba5e1af23bf3dae22f7a533a.bindPopup(popup_758fe507a0644a927a553a7462d43ac3)
+        ;
+
+        
+    
+</script>
+</html>
