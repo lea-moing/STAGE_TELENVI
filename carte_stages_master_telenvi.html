@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_9de795d20bcb93e60420c1e0b4b631d9 {
+                #map_d40efca360511f34135a49d59994d5b8 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,16 +39,21 @@
 <body>
     
     
-            <div class="folium-map" id="map_9de795d20bcb93e60420c1e0b4b631d9" ></div>
+     <div style="position: fixed; top: 10px; left: 50px; width: 100%; z-index:1000; font-size:24px; font-weight: bold; color: white;">
+     Carte intéractive des lieux et sujets de stages des M2 TELENVI (2025)
+     </div>
+     
+    
+            <div class="folium-map" id="map_d40efca360511f34135a49d59994d5b8" ></div>
         
 </body>
 <script>
     
     
-            var map_9de795d20bcb93e60420c1e0b4b631d9 = L.map(
-                "map_9de795d20bcb93e60420c1e0b4b631d9",
+            var map_d40efca360511f34135a49d59994d5b8 = L.map(
+                "map_d40efca360511f34135a49d59994d5b8",
                 {
-                    center: [0.0, 0.0],
+                    center: [20.0, 0.0],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 2,
@@ -63,15 +68,15 @@
 
         
     
-            var tile_layer_bdbedee6ee5d29c6199e71b23dc61943 = L.tileLayer(
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+            var tile_layer_247f160f31d8bec9c4c582fbe259c91e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
-  "maxZoom": 19,
-  "maxNativeZoom": 19,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
   "noWrap": false,
-  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
-  "subdomains": "abc",
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
   "detectRetina": false,
   "tms": false,
   "opacity": 1,
@@ -80,436 +85,544 @@
             );
         
     
-            tile_layer_bdbedee6ee5d29c6199e71b23dc61943.addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            tile_layer_247f160f31d8bec9c4c582fbe259c91e.addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var marker_c89691998bcfac932589d3ee32422608 = L.marker(
+            var marker_24bbcdf8a2c2336056ea55738f95b245 = L.marker(
                 [48.6329, -2.0611],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_205563e4a631f638df75e226aef04d5b = L.AwesomeMarkers.icon(
+            var icon_693abe55c2ce27f685449a68277d649d = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_c89691998bcfac932589d3ee32422608.setIcon(icon_205563e4a631f638df75e226aef04d5b);
+            marker_24bbcdf8a2c2336056ea55738f95b245.setIcon(icon_693abe55c2ce27f685449a68277d649d);
         
     
-        var popup_0fc49c354f9d320d8668f761b0e7910e = L.popup({
+        var popup_86f5f414d0869a3527fba4812729a9ee = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_b0b2093e5abe800b567f6aba4b4f8391 = $(`<div id="html_b0b2093e5abe800b567f6aba4b4f8391" style="width: 100.0%; height: 100.0%;"><b>Centre de Géoécologie Littorale, Dinard</b><br>Évolution du complexe écosystémique de la baie du Mont-Saint-Michel via l'imagerie optique et LiDAR à très haute résolution et la simulation hydro-sédimentaire.</div>`)[0];
-                popup_0fc49c354f9d320d8668f761b0e7910e.setContent(html_b0b2093e5abe800b567f6aba4b4f8391);
+                var html_7cf018db0f9c8e75541dd8fcd963bf07 = $(`<div id="html_7cf018db0f9c8e75541dd8fcd963bf07" style="width: 100.0%; height: 100.0%;"><b>Centre de Géoécologie Littorale, Dinard</b><br>Évolution du complexe écosystémique de la baie du Mont-Saint-Michel via l'imagerie optique et LiDAR à très haute résolution et la simulation hydro-sédimentaire.</div>`)[0];
+                popup_86f5f414d0869a3527fba4812729a9ee.setContent(html_7cf018db0f9c8e75541dd8fcd963bf07);
             
         
 
-        marker_c89691998bcfac932589d3ee32422608.bindPopup(popup_0fc49c354f9d320d8668f761b0e7910e)
+        marker_24bbcdf8a2c2336056ea55738f95b245.bindPopup(popup_86f5f414d0869a3527fba4812729a9ee)
         ;
 
         
     
     
-            var marker_903a9aac3e5491a50874cdf1430cf9aa = L.marker(
+            var marker_3392c94f24341d3a4b18125f789e6686 = L.marker(
                 [45.7339, 4.9119],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_c906bb14c7bf15bb3261874d71c387b2 = L.AwesomeMarkers.icon(
+            var icon_2e4b766966d861e81e7868e1b0f2a5e1 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_903a9aac3e5491a50874cdf1430cf9aa.setIcon(icon_c906bb14c7bf15bb3261874d71c387b2);
+            marker_3392c94f24341d3a4b18125f789e6686.setIcon(icon_2e4b766966d861e81e7868e1b0f2a5e1);
         
     
-        var popup_4fa5d2699a6097b93205c535ff309760 = L.popup({
+        var popup_30d79648f7a413bd691ad837f8ab7580 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_46579ea5ac2d1ccffcb5697331499857 = $(`<div id="html_46579ea5ac2d1ccffcb5697331499857" style="width: 100.0%; height: 100.0%;"><b>UMR 5600 EVS IRG, Bron</b><br>Analyse hydrologique et hydro-climatologique du fonctionnement de la chaîne volcanique des Chyulu Hills au Kenya.</div>`)[0];
-                popup_4fa5d2699a6097b93205c535ff309760.setContent(html_46579ea5ac2d1ccffcb5697331499857);
+                var html_2abec2f5645365dd43764731b6a36e0c = $(`<div id="html_2abec2f5645365dd43764731b6a36e0c" style="width: 100.0%; height: 100.0%;"><b>UMR 5600 EVS IRG, Bron</b><br>Analyse hydrologique et hydro-climatologique du fonctionnement de la chaîne volcanique des Chyulu Hills au Kenya.</div>`)[0];
+                popup_30d79648f7a413bd691ad837f8ab7580.setContent(html_2abec2f5645365dd43764731b6a36e0c);
             
         
 
-        marker_903a9aac3e5491a50874cdf1430cf9aa.bindPopup(popup_4fa5d2699a6097b93205c535ff309760)
+        marker_3392c94f24341d3a4b18125f789e6686.bindPopup(popup_30d79648f7a413bd691ad837f8ab7580)
         ;
 
         
     
     
-            var marker_a5b73a2a59aa5785aa591a1d326b9082 = L.marker(
+            var marker_b9addd8a75f6e3dd42b3cb36235a9564 = L.marker(
                 [48.118402, -1.70396],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_feef22d9716ecd0b92605dea3e248e40 = L.AwesomeMarkers.icon(
+            var icon_961c49cf1dcbb83ada325fc44357c975 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_a5b73a2a59aa5785aa591a1d326b9082.setIcon(icon_feef22d9716ecd0b92605dea3e248e40);
+            marker_b9addd8a75f6e3dd42b3cb36235a9564.setIcon(icon_961c49cf1dcbb83ada325fc44357c975);
         
     
-        var popup_3d1ed53fee56dca7ccfde4d824b2535a = L.popup({
+        var popup_ea02250cf5ed87415ceef139fb626721 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_38171785a8c29749744627ebaf889509 = $(`<div id="html_38171785a8c29749744627ebaf889509" style="width: 100.0%; height: 100.0%;"><b>LETG Rennes (CNRS), Rennes</b><br>Adaptation des modèles de super-résolution 2D à la 3D : construction d'une base de référence de données 3D actives et passives.</div>`)[0];
-                popup_3d1ed53fee56dca7ccfde4d824b2535a.setContent(html_38171785a8c29749744627ebaf889509);
+                var html_8ca1b2d60e2b593d139bbf89caaf3b03 = $(`<div id="html_8ca1b2d60e2b593d139bbf89caaf3b03" style="width: 100.0%; height: 100.0%;"><b>LETG Rennes (CNRS), Rennes</b><br>Adaptation des modèles de super-résolution 2D à la 3D : construction d'une base de référence de données 3D actives et passives.</div>`)[0];
+                popup_ea02250cf5ed87415ceef139fb626721.setContent(html_8ca1b2d60e2b593d139bbf89caaf3b03);
             
         
 
-        marker_a5b73a2a59aa5785aa591a1d326b9082.bindPopup(popup_3d1ed53fee56dca7ccfde4d824b2535a)
+        marker_b9addd8a75f6e3dd42b3cb36235a9564.bindPopup(popup_ea02250cf5ed87415ceef139fb626721)
         ;
 
         
     
     
-            var marker_f5c2efc8a1a543d488c1a1813e082c52 = L.marker(
+            var marker_b0289f05d9dcbe40445d245c2d39e3cf = L.marker(
                 [43.645086, 3.867335],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_cccb1ddb447060ab16bab5f20ce374a4 = L.AwesomeMarkers.icon(
+            var icon_e07d9fdd95b19599833a2a5ef550d7d1 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_f5c2efc8a1a543d488c1a1813e082c52.setIcon(icon_cccb1ddb447060ab16bab5f20ce374a4);
+            marker_b0289f05d9dcbe40445d245c2d39e3cf.setIcon(icon_e07d9fdd95b19599833a2a5ef550d7d1);
         
     
-        var popup_5fd2fc3266ad74ffd64e3fc7d540e06c = L.popup({
+        var popup_b60cffea7e70ac629011a27edecd46c6 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ff10d2216fb2312c52a1c7ad2c2da2a4 = $(`<div id="html_ff10d2216fb2312c52a1c7ad2c2da2a4" style="width: 100.0%; height: 100.0%;"><b>IRD, Montpellier</b><br>Détection et segmentation des couronnes d’arbres par Deep Learning.</div>`)[0];
-                popup_5fd2fc3266ad74ffd64e3fc7d540e06c.setContent(html_ff10d2216fb2312c52a1c7ad2c2da2a4);
+                var html_b7c2a5c7bbcdbbcd1f89e15282b03863 = $(`<div id="html_b7c2a5c7bbcdbbcd1f89e15282b03863" style="width: 100.0%; height: 100.0%;"><b>IRD, Montpellier</b><br>Détection et segmentation des couronnes d’arbres par Deep Learning.</div>`)[0];
+                popup_b60cffea7e70ac629011a27edecd46c6.setContent(html_b7c2a5c7bbcdbbcd1f89e15282b03863);
             
         
 
-        marker_f5c2efc8a1a543d488c1a1813e082c52.bindPopup(popup_5fd2fc3266ad74ffd64e3fc7d540e06c)
+        marker_b0289f05d9dcbe40445d245c2d39e3cf.bindPopup(popup_b60cffea7e70ac629011a27edecd46c6)
         ;
 
         
     
     
-            var marker_bbdb9fe49287de6a0248cead179a6e4c = L.marker(
+            var marker_eef50200d0103374447729c39d87599a = L.marker(
                 [48.1146657, -1.7078647],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_9b2727cdcfd10292cf689d6542ff7545 = L.AwesomeMarkers.icon(
+            var icon_d37428169825a3fd7c24a8c37c00a984 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_bbdb9fe49287de6a0248cead179a6e4c.setIcon(icon_9b2727cdcfd10292cf689d6542ff7545);
+            marker_eef50200d0103374447729c39d87599a.setIcon(icon_d37428169825a3fd7c24a8c37c00a984);
         
     
-        var popup_5db005f26e39c70f248c20c64c437ffe = L.popup({
+        var popup_22e5f97146ddf5a424e44875bca9c7a1 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_03bfe556638fa009e7df91ddc8a6e8b4 = $(`<div id="html_03bfe556638fa009e7df91ddc8a6e8b4" style="width: 100.0%; height: 100.0%;"><b>INRAE - UMR DECOD, Rennes</b><br>Suivi des dynamiques spatio-temporelles de l’activité phytoplanctonique dans les eaux côtières des îles Kerguelen.</div>`)[0];
-                popup_5db005f26e39c70f248c20c64c437ffe.setContent(html_03bfe556638fa009e7df91ddc8a6e8b4);
+                var html_10c4d9999619f700171d620ef50fd7ba = $(`<div id="html_10c4d9999619f700171d620ef50fd7ba" style="width: 100.0%; height: 100.0%;"><b>INRAE - UMR DECOD, Rennes</b><br>Suivi des dynamiques spatio-temporelles de l’activité phytoplanctonique dans les eaux côtières des îles Kerguelen.</div>`)[0];
+                popup_22e5f97146ddf5a424e44875bca9c7a1.setContent(html_10c4d9999619f700171d620ef50fd7ba);
             
         
 
-        marker_bbdb9fe49287de6a0248cead179a6e4c.bindPopup(popup_5db005f26e39c70f248c20c64c437ffe)
+        marker_eef50200d0103374447729c39d87599a.bindPopup(popup_22e5f97146ddf5a424e44875bca9c7a1)
         ;
 
         
     
     
-            var marker_94f746c20026af8c8acc835dcb7d4544 = L.marker(
+            var marker_ff6feb7d7b227da7ab1270add3a57067 = L.marker(
                 [48.112868, -1.706839],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_7d41e06382cefc75ff1a050cafac281c = L.AwesomeMarkers.icon(
+            var icon_15f7d4e55dd226878e56697827954590 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_94f746c20026af8c8acc835dcb7d4544.setIcon(icon_7d41e06382cefc75ff1a050cafac281c);
+            marker_ff6feb7d7b227da7ab1270add3a57067.setIcon(icon_15f7d4e55dd226878e56697827954590);
         
     
-        var popup_c550bea177bd8d4abd5f770dea5c3a27 = L.popup({
+        var popup_6a055b53b5259630f45517920a12f700 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1c2db178b28fbf2934caae0b1c1c5745 = $(`<div id="html_1c2db178b28fbf2934caae0b1c1c5745" style="width: 100.0%; height: 100.0%;"><b>UMR SAS - INRAE, Rennes</b><br>Étude des effets liés à la présence d’un couvert végétal sur les sols et services écosystémiques dans les vignobles en Espagne.</div>`)[0];
-                popup_c550bea177bd8d4abd5f770dea5c3a27.setContent(html_1c2db178b28fbf2934caae0b1c1c5745);
+                var html_bdf97b414eca8148a7e67e8f62b54ef1 = $(`<div id="html_bdf97b414eca8148a7e67e8f62b54ef1" style="width: 100.0%; height: 100.0%;"><b>UMR SAS - INRAE, Rennes</b><br>Étude des effets liés à la présence d’un couvert végétal sur les sols et services écosystémiques dans les vignobles en Espagne.</div>`)[0];
+                popup_6a055b53b5259630f45517920a12f700.setContent(html_bdf97b414eca8148a7e67e8f62b54ef1);
             
         
 
-        marker_94f746c20026af8c8acc835dcb7d4544.bindPopup(popup_c550bea177bd8d4abd5f770dea5c3a27)
+        marker_ff6feb7d7b227da7ab1270add3a57067.bindPopup(popup_6a055b53b5259630f45517920a12f700)
         ;
 
         
     
     
-            var marker_31addf886578ede244825138564f75cc = L.marker(
+            var marker_cdd56d8b4dc2618012633db11439f710 = L.marker(
                 [43.6494315, 3.8689078],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_f1fed7f453ad9bfac7bdb58859b3660c = L.AwesomeMarkers.icon(
+            var icon_1754f0b3c884cb42b75a06788b227c86 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_31addf886578ede244825138564f75cc.setIcon(icon_f1fed7f453ad9bfac7bdb58859b3660c);
+            marker_cdd56d8b4dc2618012633db11439f710.setIcon(icon_1754f0b3c884cb42b75a06788b227c86);
         
     
-        var popup_b6bc50c2a922d9cb5db2d295e1cbe34d = L.popup({
+        var popup_416f22019cd07664a5f249acd9a6b27d = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5925ba0ed9b4a9d68dd28d18d9e78fd5 = $(`<div id="html_5925ba0ed9b4a9d68dd28d18d9e78fd5" style="width: 100.0%; height: 100.0%;"><b>UPR AIDA, CIRAD, Montpellier</b><br>Évaluation spatialisée de la précision des produits globaux d’occupation du sol pour l'Afrique Sub-Saharienne.</div>`)[0];
-                popup_b6bc50c2a922d9cb5db2d295e1cbe34d.setContent(html_5925ba0ed9b4a9d68dd28d18d9e78fd5);
+                var html_3037979cd86fbf965ce053a9b98e8899 = $(`<div id="html_3037979cd86fbf965ce053a9b98e8899" style="width: 100.0%; height: 100.0%;"><b>UPR AIDA, CIRAD, Montpellier</b><br>Évaluation spatialisée de la précision des produits globaux d’occupation du sol pour l'Afrique Sub-Saharienne.</div>`)[0];
+                popup_416f22019cd07664a5f249acd9a6b27d.setContent(html_3037979cd86fbf965ce053a9b98e8899);
             
         
 
-        marker_31addf886578ede244825138564f75cc.bindPopup(popup_b6bc50c2a922d9cb5db2d295e1cbe34d)
+        marker_cdd56d8b4dc2618012633db11439f710.bindPopup(popup_416f22019cd07664a5f249acd9a6b27d)
         ;
 
         
     
     
-            var marker_5c2e1628bcc784aa96c5698cc204a470 = L.marker(
+            var marker_389b57bd9b8ee1ab04f1d4fcda515353 = L.marker(
                 [48.8566, 2.3522],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_c549d4f09850305eeaa820b0ec0dcdc5 = L.AwesomeMarkers.icon(
+            var icon_b7eb4dcccc807aa9793915b1d805640a = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_5c2e1628bcc784aa96c5698cc204a470.setIcon(icon_c549d4f09850305eeaa820b0ec0dcdc5);
+            marker_389b57bd9b8ee1ab04f1d4fcda515353.setIcon(icon_b7eb4dcccc807aa9793915b1d805640a);
         
     
-        var popup_67312fe45e543451967b830effa64b83 = L.popup({
+        var popup_1a29245124f878e819c13f0c83266a78 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5652730ece69ccd96aba478431c3f153 = $(`<div id="html_5652730ece69ccd96aba478431c3f153" style="width: 100.0%; height: 100.0%;"><b>Ministère des armées, Paris</b><br>Utilisation de données hyperspectrales pour les armées.</div>`)[0];
-                popup_67312fe45e543451967b830effa64b83.setContent(html_5652730ece69ccd96aba478431c3f153);
+                var html_bacc9380e42bb4a0b20d4a68a883aa69 = $(`<div id="html_bacc9380e42bb4a0b20d4a68a883aa69" style="width: 100.0%; height: 100.0%;"><b>Ministère des armées, Paris</b><br>Utilisation de données hyperspectrales pour les armées.</div>`)[0];
+                popup_1a29245124f878e819c13f0c83266a78.setContent(html_bacc9380e42bb4a0b20d4a68a883aa69);
             
         
 
-        marker_5c2e1628bcc784aa96c5698cc204a470.bindPopup(popup_67312fe45e543451967b830effa64b83)
+        marker_389b57bd9b8ee1ab04f1d4fcda515353.bindPopup(popup_1a29245124f878e819c13f0c83266a78)
         ;
 
         
     
     
-            var marker_bddfdbec13b6aa6edfefa4d7e9d7fe08 = L.marker(
+            var marker_d1e0bb9a89949855c53bbd26fb1d8283 = L.marker(
                 [11.9369164, 79.8359207],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_a69a0d98dce8cdf62c66b792254c9e30 = L.AwesomeMarkers.icon(
+            var icon_764d9af919d4942dfcb5f95a9d5a9597 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_bddfdbec13b6aa6edfefa4d7e9d7fe08.setIcon(icon_a69a0d98dce8cdf62c66b792254c9e30);
+            marker_d1e0bb9a89949855c53bbd26fb1d8283.setIcon(icon_764d9af919d4942dfcb5f95a9d5a9597);
         
     
-        var popup_e747fd4e9fff3aef8ebcd607b523a0ae = L.popup({
+        var popup_136f931b5de165483c663248c67a71fd = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_bdae06eaf34213ba1f10b77a6e58dbcb = $(`<div id="html_bdae06eaf34213ba1f10b77a6e58dbcb" style="width: 100.0%; height: 100.0%;"><b>UMIFRE 21, UAR CNRS 3330, Institut français de Pondichéry, Pondichéry, Inde</b><br>Cartographie des trajectoires phénologiques des cultures et des forêts sèches entre 2022 et juin 2024. Analyse des trajectoires en fonction des précipitations et de l'équilibre des ressources en eau souterraine.</div>`)[0];
-                popup_e747fd4e9fff3aef8ebcd607b523a0ae.setContent(html_bdae06eaf34213ba1f10b77a6e58dbcb);
+                var html_b0260dc36c5eb7db2d60bef1c402210d = $(`<div id="html_b0260dc36c5eb7db2d60bef1c402210d" style="width: 100.0%; height: 100.0%;"><b>UMIFRE 21, UAR CNRS 3330, Institut français de Pondichéry, Pondichéry, Inde</b><br>Cartographie des trajectoires phénologiques des cultures et des forêts sèches entre 2022 et juin 2024. Analyse des trajectoires en fonction des précipitations et de l'équilibre des ressources en eau souterraine.</div>`)[0];
+                popup_136f931b5de165483c663248c67a71fd.setContent(html_b0260dc36c5eb7db2d60bef1c402210d);
             
         
 
-        marker_bddfdbec13b6aa6edfefa4d7e9d7fe08.bindPopup(popup_e747fd4e9fff3aef8ebcd607b523a0ae)
+        marker_d1e0bb9a89949855c53bbd26fb1d8283.bindPopup(popup_136f931b5de165483c663248c67a71fd)
         ;
 
         
     
     
-            var marker_301f36b1f3447110bad651abdebb5863 = L.marker(
+            var marker_a7e2e6746aeb93376b42089597631539 = L.marker(
                 [43.6452586, 3.8766402],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_6a4e41a3de2521669b3dbb467d4459ca = L.AwesomeMarkers.icon(
+            var icon_341a3d786720e1ac88bb415677bd2ebc = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_301f36b1f3447110bad651abdebb5863.setIcon(icon_6a4e41a3de2521669b3dbb467d4459ca);
+            marker_a7e2e6746aeb93376b42089597631539.setIcon(icon_341a3d786720e1ac88bb415677bd2ebc);
         
     
-        var popup_6ef32304c5d36c5b6a4290e4a92ac2c6 = L.popup({
+        var popup_dbf6e7ab6d198ed09cbd07f7b429a8c5 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1b3a39210dd1979b9008a5134f506ea2 = $(`<div id="html_1b3a39210dd1979b9008a5134f506ea2" style="width: 100.0%; height: 100.0%;"><b>UMR TETIS, CIRAD, Montpellier</b><br>Analyse d'images satellitaires pour le suivi des labours motorisés dans le nord Bénin.</div>`)[0];
-                popup_6ef32304c5d36c5b6a4290e4a92ac2c6.setContent(html_1b3a39210dd1979b9008a5134f506ea2);
+                var html_57815f37488d1c5395b680f2c0750ab2 = $(`<div id="html_57815f37488d1c5395b680f2c0750ab2" style="width: 100.0%; height: 100.0%;"><b>UMR TETIS, CIRAD, Montpellier</b><br>Analyse d'images satellitaires pour le suivi des labours motorisés dans le nord Bénin.</div>`)[0];
+                popup_dbf6e7ab6d198ed09cbd07f7b429a8c5.setContent(html_57815f37488d1c5395b680f2c0750ab2);
             
         
 
-        marker_301f36b1f3447110bad651abdebb5863.bindPopup(popup_6ef32304c5d36c5b6a4290e4a92ac2c6)
+        marker_a7e2e6746aeb93376b42089597631539.bindPopup(popup_dbf6e7ab6d198ed09cbd07f7b429a8c5)
         ;
 
         
     
     
-            var marker_6323c76d96d5915abefdbc52a014dca1 = L.marker(
+            var marker_914b2047b28d48c1433a558790f9aee4 = L.marker(
                 [-20.8822474, 55.4487788],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_58f18c093f41c22bae201da310e3a503 = L.AwesomeMarkers.icon(
+            var icon_30b1163c4a63848462b9ab8ec5d9f659 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_6323c76d96d5915abefdbc52a014dca1.setIcon(icon_58f18c093f41c22bae201da310e3a503);
+            marker_914b2047b28d48c1433a558790f9aee4.setIcon(icon_30b1163c4a63848462b9ab8ec5d9f659);
         
     
-        var popup_700764be93d90c5d219f071e539a9792 = L.popup({
+        var popup_69cbfaba809a72d6d4a76288c9e0b3e3 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_c0adb35062746f7631c1aab52d14dafb = $(`<div id="html_c0adb35062746f7631c1aab52d14dafb" style="width: 100.0%; height: 100.0%;"><b>BRGM, Saint-Denis, La Réunion</b><br>Analyse des données EGMS (2015-2022) pour cartographier les zones mobiles, caractériser les dynamiques de déplacements, détecter des précurseurs d'effondrements récents et valider les résultats par des vérifications terrain.</div>`)[0];
-                popup_700764be93d90c5d219f071e539a9792.setContent(html_c0adb35062746f7631c1aab52d14dafb);
+                var html_d6f0622c3a688cd077ed4c2e4809a26f = $(`<div id="html_d6f0622c3a688cd077ed4c2e4809a26f" style="width: 100.0%; height: 100.0%;"><b>BRGM, Saint-Denis, La Réunion</b><br>Analyse des données EGMS (2015-2022) pour cartographier les zones mobiles, caractériser les dynamiques de déplacements, détecter des précurseurs d'effondrements récents et valider les résultats par des vérifications terrain.</div>`)[0];
+                popup_69cbfaba809a72d6d4a76288c9e0b3e3.setContent(html_d6f0622c3a688cd077ed4c2e4809a26f);
             
         
 
-        marker_6323c76d96d5915abefdbc52a014dca1.bindPopup(popup_700764be93d90c5d219f071e539a9792)
+        marker_914b2047b28d48c1433a558790f9aee4.bindPopup(popup_69cbfaba809a72d6d4a76288c9e0b3e3)
         ;
 
         
     
     
-            var marker_1b9148f606a329e076b6bcd5d29358b2 = L.marker(
+            var marker_0b7b4f3fcc8a86b6e6889d7406e31583 = L.marker(
                 [48.1183999, -1.7038622],
                 {
 }
-            ).addTo(map_9de795d20bcb93e60420c1e0b4b631d9);
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
         
     
-            var icon_5f9c0f3372dbd5539dc00d0ed93bb3be = L.AwesomeMarkers.icon(
+            var icon_ba87fbf4713c087e683615c5367d6b62 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "blue",
+  "markerColor": "grey",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_1b9148f606a329e076b6bcd5d29358b2.setIcon(icon_5f9c0f3372dbd5539dc00d0ed93bb3be);
+            marker_0b7b4f3fcc8a86b6e6889d7406e31583.setIcon(icon_ba87fbf4713c087e683615c5367d6b62);
         
     
-        var popup_1641c80dcbc39b254cb829eab90517af = L.popup({
+        var popup_3a6032f3c398d5ef62b0c64f93de6a8c = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_717fc898c60d8991d8c08a544284a322 = $(`<div id="html_717fc898c60d8991d8c08a544284a322" style="width: 100.0%; height: 100.0%;"><b>LETG Rennes (CNRS), Rennes</b><br>Etudier et spatialiser l'évolution du potentiel climatique pour la viticulture en Uruguay à partir de données observées puis de données modélisées de changement climatique (SSP).</div>`)[0];
-                popup_1641c80dcbc39b254cb829eab90517af.setContent(html_717fc898c60d8991d8c08a544284a322);
+                var html_ed47c8fe22c6f2bdccdc8363d5294b75 = $(`<div id="html_ed47c8fe22c6f2bdccdc8363d5294b75" style="width: 100.0%; height: 100.0%;"><b>LETG Rennes (CNRS), Rennes</b><br>Etudier et spatialiser l'évolution du potentiel climatique pour la viticulture en Uruguay à partir de données observées puis de données modélisées de changement climatique (SSP).</div>`)[0];
+                popup_3a6032f3c398d5ef62b0c64f93de6a8c.setContent(html_ed47c8fe22c6f2bdccdc8363d5294b75);
             
         
 
-        marker_1b9148f606a329e076b6bcd5d29358b2.bindPopup(popup_1641c80dcbc39b254cb829eab90517af)
+        marker_0b7b4f3fcc8a86b6e6889d7406e31583.bindPopup(popup_3a6032f3c398d5ef62b0c64f93de6a8c)
+        ;
+
+        
+    
+    
+            var marker_60e924652447e6351374c76ebead622f = L.marker(
+                [48.5265208, 7.7381696],
+                {
+}
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
+        
+    
+            var icon_2f1e15166fa17b5dfaff528a78767c4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "grey",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_60e924652447e6351374c76ebead622f.setIcon(icon_2f1e15166fa17b5dfaff528a78767c4b);
+        
+    
+        var popup_49b3f49dd468cb5c33d2bc9d2382341d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5479c9015aa43831570091b0aa4d6c94 = $(`<div id="html_5479c9015aa43831570091b0aa4d6c94" style="width: 100.0%; height: 100.0%;"><b>SERTIT, ICube, Strasbourg</b><br>Télédétection des zones brûlées par images SAR</div>`)[0];
+                popup_49b3f49dd468cb5c33d2bc9d2382341d.setContent(html_5479c9015aa43831570091b0aa4d6c94);
+            
+        
+
+        marker_60e924652447e6351374c76ebead622f.bindPopup(popup_49b3f49dd468cb5c33d2bc9d2382341d)
+        ;
+
+        
+    
+    
+            var marker_7a671947b5fc9b954aec7164656db6cc = L.marker(
+                [44.787013, -0.578755],
+                {
+}
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
+        
+    
+            var icon_11be27b6b59b4fb628c6b6496bb9775b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "grey",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7a671947b5fc9b954aec7164656db6cc.setIcon(icon_11be27b6b59b4fb628c6b6496bb9775b);
+        
+    
+        var popup_c7ea07cce6f3c76b0081c27a6e69e406 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5dbfc99705efb58c426dad6fe2b455d = $(`<div id="html_c5dbfc99705efb58c426dad6fe2b455d" style="width: 100.0%; height: 100.0%;"><b>UMR ISPA, INRAE, Villenave-d'Ornon</b><br>Identification de la fragmentation des forêts et de la construction des routes en Europe et en Afrique centrale par télédétection à haute résolution et apprentissage profond</div>`)[0];
+                popup_c7ea07cce6f3c76b0081c27a6e69e406.setContent(html_c5dbfc99705efb58c426dad6fe2b455d);
+            
+        
+
+        marker_7a671947b5fc9b954aec7164656db6cc.bindPopup(popup_c7ea07cce6f3c76b0081c27a6e69e406)
+        ;
+
+        
+    
+    
+            var marker_c93c47b71f26bc1ab6527c28d49eac0d = L.marker(
+                [48.1189422, -1.7035481],
+                {
+}
+            ).addTo(map_d40efca360511f34135a49d59994d5b8);
+        
+    
+            var icon_1634df5c2180ca73e8d7a6246a731200 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "grey",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c93c47b71f26bc1ab6527c28d49eac0d.setIcon(icon_1634df5c2180ca73e8d7a6246a731200);
+        
+    
+        var popup_5da171dc5f3437fafb79abe731830bb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf1de83b10680f4c35d245a0cf3b8bf0 = $(`<div id="html_bf1de83b10680f4c35d245a0cf3b8bf0" style="width: 100.0%; height: 100.0%;"><b>LETG Rennes (CNRS), Rennes</b><br></div>`)[0];
+                popup_5da171dc5f3437fafb79abe731830bb3.setContent(html_bf1de83b10680f4c35d245a0cf3b8bf0);
+            
+        
+
+        marker_c93c47b71f26bc1ab6527c28d49eac0d.bindPopup(popup_5da171dc5f3437fafb79abe731830bb3)
         ;
 
         
